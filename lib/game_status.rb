@@ -50,5 +50,5 @@ WIN_COMBINATIONS = [
   
   def winner(board)
     winning_array = won?(board)
-    return winning_array[0]
+    return board[winning_array[0]]
   end
