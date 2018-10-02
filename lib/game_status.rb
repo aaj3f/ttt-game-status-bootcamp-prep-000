@@ -47,3 +47,8 @@ WIN_COMBINATIONS = [
   def over?(board)
     draw?(board) || won?(board)
   end
+  
+  def winner(board)
+    winning_array = won?(board)
+    return winning_array[0]
+  end
