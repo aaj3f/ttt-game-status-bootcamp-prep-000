@@ -49,6 +49,10 @@ WIN_COMBINATIONS = [
   end
   
   def winner(board)
+    if (won?(board))
     winning_array = won?(board)
     return board[winning_array[0]]
+  else
+    return nil
+  end
   end
